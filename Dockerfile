@@ -19,7 +19,7 @@ RUN set -eux; \
 	\
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/geoserver-${GEOSERVER_VERSION}-war.zip -O /tmp/geoserver.zip; \
 	unzip -q /tmp/geoserver.zip -d /tmp; \
-	mv /tmp/geoserver.war /usr/local/tomcat/webapps/geoserver.war; \
+	unzip -d /usr/local/tomcat/webapps/ROOT /tmp/geoserver.war; \
 	rm -rf /tmp/*
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
