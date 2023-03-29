@@ -30,10 +30,16 @@ jobs:  # workflow中的job
         with:
           images: nriet/geoserver
         
+#       - name: geoserver
+#         uses: docker/build-push-action@v2 # docker build  & push
+#         with:
+#           context: .
+#           push: true
+#           tags: nriet/geoserver:2.22.2
       - name: geoserver
         uses: docker/build-push-action@v2 # docker build  & push
         with:
           context: .
           push: true
-          tags: nriet/geoserver
+          tags: nriet/geoserver:2.18.0
           
