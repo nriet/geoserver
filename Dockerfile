@@ -27,8 +27,8 @@ RUN set -eux; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-netcdf-plugin.zip -O /tmp/geoserver-netcdf-plugin.zip; \
 	unzip -q /tmp/geoserver.zip -d /tmp; \
 	unzip -q /tmp/geoserver-vectortiles-plugin.zip -d /tmp; \
+	unzip -q /tmp/geoserver-netcdf-plugin.zip -d /tmp; \
 	# unzip -q /tmp/geoserver-netcdf-out-plugin.zip -d /tmp; \
-	# unzip -q /tmp/geoserver-netcdf-plugin.zip -d /tmp; \
 	unzip -q /tmp/fonts.zip -d /usr/share/fonts/fonts-zh; \
 	unzip -q /tmp/geoserver.war -d /usr/local/tomcat/webapps/ROOT; \
 	mv /tmp/*.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib; \
