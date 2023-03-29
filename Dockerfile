@@ -30,7 +30,7 @@ RUN set -eux; \
 	unzip -q /tmp/geoserver-netcdf-out-plugin.zip -d /tmp; \
 	unzip -q /tmp/geoserver-netcdf-plugin.zip -d /tmp; \
 	unzip -d /usr/local/tomcat/webapps/ROOT /tmp/geoserver.war; \
-	unzip -d /usr/share/fonts fonts.zip; \
+	unzip -d /usr/share/fonts/fonts-zh fonts.zip; \
 	mv /tmp/*.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib; \
 	rm -rf /tmp/*
 
