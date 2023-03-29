@@ -22,8 +22,8 @@ RUN set -eux; \
 RUN set -eux; \
 	\
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/geoserver-${GEOSERVER_VERSION}-war.zip -O /tmp/geoserver.zip; \
-	wget -q https://nchc.dl.sourceforge.net/project/geoserver/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-vectortiles-plugin.zip -O /tmp/geoserver-vectortiles-plugin.zip; \
-	wget -q https://nchc.dl.sourceforge.net/project/geoserver/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-netcdf-out-plugin.zip -O /tmp/geoserver-netcdf-out-plugin.zip; \
+	wget -q https://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-vectortiles-plugin.zip -O /tmp/geoserver-vectortiles-plugin.zip; \
+	wget -q https://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-netcdf-out-plugin.zip -O /tmp/geoserver-netcdf-out-plugin.zip; \
 	unzip -q /tmp/geoserver.zip -d /tmp; \
 	unzip -q /tmp/geoserver-vectortiles-plugin.zip -d /tmp; \
 	unzip -q /tmp/geoserver-netcdf-out-plugin.zip -d /tmp; \
