@@ -31,7 +31,7 @@ RUN set -eux; \
 	unzip -o /tmp/geoserver-netcdf-out-plugin.zip -d /tmp; \
 	unzip -q /tmp/fonts.zip -d /usr/share/fonts/fonts-zh; \
 	unzip -q /tmp/geoserver.war -d /usr/local/tomcat/webapps/ROOT; \
-	mv /tmp/*.jar /usr/local/tomcat/webapps/ROgeoserver-netcdf-plugin.zipOT/WEB-INF/lib; \
+	mv /tmp/*.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib; \
 	rm -rf /tmp/*
 
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
