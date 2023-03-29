@@ -4,7 +4,7 @@ MAINTAINER Axiu <itzyx@vip.qq.com>
 
 ENV TZ PRC
 
-ENV GEOSERVER_VERSION 2.22.2
+ENV GEOSERVER_VERSION 2.18.0
 
 RUN set -eux; \
 	apt-get update; \
