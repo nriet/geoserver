@@ -1,10 +1,10 @@
-FROM tomcat:8.5.78-jdk8-openjdk-slim-buster
+FROM tomcat:8.5.82-jdk11-openjdk-slim-buster
 
 MAINTAINER Axiu <itzyx@vip.qq.com>
 
 ENV TZ PRC
 
-ENV GEOSERVER_VERSION 2.22.2
+ENV GEOSERVER_VERSION 2.23.1
 
 COPY fonts.zip /tmp
 
