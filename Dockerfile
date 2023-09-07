@@ -4,7 +4,7 @@ MAINTAINER Axiu <itzyx@vip.qq.com>
 
 ENV TZ PRC
 
-ENV GEOSERVER_VERSION 2.23.1
+ENV GEOSERVER_VERSION 2.23.2
 
 COPY fonts.zip /tmp
 
