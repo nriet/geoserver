@@ -25,7 +25,6 @@ RUN set -eux; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-vectortiles-plugin.zip -O /tmp/geoserver-vectortiles-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-netcdf-out-plugin.zip -O /tmp/geoserver-netcdf-out-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-netcdf-plugin.zip -O /tmp/geoserver-netcdf-plugin.zip; \
-	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-netcdf-plugin.zip -O /tmp/geoserver-netcdf-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-css-plugin.zip -O /tmp/geoserver-css-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ysld-plugin.zip -O /tmp/geoserver-ysld-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-wps-plugin.zip -O /tmp/geoserver-wps-plugin.zip; \
