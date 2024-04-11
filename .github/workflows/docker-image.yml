@@ -33,9 +33,13 @@ jobs:  # workflow中的job
       - name: geoserver
         uses: docker/build-push-action@v2 # docker build  & push
         with:
+          platforms: |
+            linux/386
+            linux/amd64
+            linux/arm64
           context: .
           push: true
-          tags: nriet/geoserver:2.23.2
+          tags: nriet/geoserver:2.25.0
       # - name: geoserver
       #   uses: docker/build-push-action@v2 # docker build  & push
       #   with:
