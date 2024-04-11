@@ -30,18 +30,17 @@ jobs:
         with:
           username: ${{ secrets.DOCKER_HUB_USER }}  # 配置dockerhub的认证，在Github项目主页 【Settings】 -> 【Secrets】 添加对应变量
           password: ${{ secrets.DOCKER_HUB_TOKEN }}
-      - 
-        name: Generate App Version
-        run: echo APP_VERSION=`git describe --tags --always` >> $GITHUB_ENV
+      # - 
+        # name: Generate App Version
+        # run: echo APP_VERSION=`git describe --tags --always` >> $GITHUB_ENV
       -
         name: Build and push
         uses: docker/build-push-action@v2
         with:
           context: .
-          # platforms: |
-          #   linux/386
-          #   linux/amd64
-          #   linux/arm64
+          platforms: |
+            linux/amd64
+            linux/arm64
           push: true
           build-args: |
             APP_NAME=${{ env.APP_NAME }}
