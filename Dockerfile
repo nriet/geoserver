@@ -1,4 +1,4 @@
-FROM tomcat:8-jdk17-openjdk-slim-buster
+FROM tomcat:9-jdk17
 
 MAINTAINER Axiu <itzyx@vip.qq.com>
 
@@ -14,6 +14,7 @@ RUN set -eux; \
 		net-tools \
 		wget \
 		unzip \
+		libfreetype6-dev \
 		fontconfig \
 	; \
 	rm -rf /var/cache/apt 
