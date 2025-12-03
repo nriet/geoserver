@@ -28,6 +28,7 @@ RUN set -eux; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-css-plugin.zip -O /tmp/geoserver-css-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ysld-plugin.zip -O /tmp/geoserver-ysld-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-wps-plugin.zip -O /tmp/geoserver-wps-plugin.zip; \
+	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-gwc-s3-plugin.zip -O /tmp/geoserver-gwc-s3-plugin.zip; \
 	unzip -o /tmp/geoserver.zip -d /tmp; \
 	unzip -o /tmp/geoserver-vectortiles-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-netcdf-out-plugin.zip -d /tmp; \
@@ -35,6 +36,7 @@ RUN set -eux; \
 	unzip -o /tmp/geoserver-css-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-ysld-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-wps-plugin.zip -d /tmp; \
+	unzip -o /tmp/geoserver-gwc-s3-plugin.zip -d /tmp; \
 	unzip -q /tmp/fonts.zip -d /usr/share/fonts/fonts-zh; \
 	unzip -q /tmp/geoserver.war -d /usr/local/tomcat/webapps/ROOT; \
 	mv /tmp/*.jar /usr/local/tomcat/webapps/ROOT/WEB-INF/lib; \
