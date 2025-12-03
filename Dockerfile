@@ -14,7 +14,6 @@ RUN set -eux; \
 		net-tools \
 		wget \
 		unzip \
-		libfreetype6-dev \
 		fontconfig \
 	; \
 	rm -rf /var/cache/apt 
