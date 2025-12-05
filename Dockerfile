@@ -29,6 +29,11 @@ RUN set -eux; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ysld-plugin.zip -O /tmp/geoserver-ysld-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-wps-plugin.zip -O /tmp/geoserver-wps-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-gwc-s3-plugin.zip -O /tmp/geoserver-gwc-s3-plugin.zip; \
+	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ncwms-plugin.zip -O /tmp/geoserver-ncwms-plugin.zip; \
+	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ncwms-plugin.zip -O /tmp/geoserver-jms-cluster-plugin.zip; \
+	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ncwms-plugin.zip -O /tmp/geoserver-activeMQ-broker-plugin.zip; \
+	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-colormap-plugin.zip -O /tmp/geoserver-colormap-plugin.zip; \
+	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-vector-mosaic-plugin.zip -O /tmp/geoserver-vector-mosaic-plugin.zip; \
 	unzip -o /tmp/geoserver.zip -d /tmp; \
 	unzip -o /tmp/geoserver-vectortiles-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-netcdf-out-plugin.zip -d /tmp; \
@@ -36,6 +41,11 @@ RUN set -eux; \
 	unzip -o /tmp/geoserver-css-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-ysld-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-wps-plugin.zip -d /tmp; \
+	unzip -o /tmp/geoserver-ncwms-plugin.zip -d /tmp; \
+	unzip -o /tmp/geoserver-colormap-plugin.zip -d /tmp; \
+	unzip -o /tmp/geoserver-jms-cluster-plugin.zip -d /tmp; \
+	unzip -o /tmp/geoserver-activeMQ-broker-plugin.zip -d /tmp; \
+	unzip -o /tmp/geoserver-vector-mosaic-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-gwc-s3-plugin.zip -d /tmp; \
 	unzip -q /tmp/fonts.zip -d /usr/share/fonts/fonts-zh; \
 	unzip -q /tmp/geoserver.war -d /usr/local/tomcat/webapps/ROOT; \
