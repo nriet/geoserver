@@ -29,11 +29,11 @@ RUN set -eux; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ysld-plugin.zip -O /tmp/geoserver-ysld-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-wps-plugin.zip -O /tmp/geoserver-wps-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-gwc-s3-plugin.zip -O /tmp/geoserver-gwc-s3-plugin.zip; \
-	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ncwms-plugin.zip -O /tmp/geoserver-ncwms-plugin.zip; \
-	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-jms-cluster-plugin.zip -O /tmp/geoserver-jms-cluster-plugin.zip; \
-	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-activeMQ-broker-plugin.zip -O /tmp/geoserver-activeMQ-broker-plugin.zip; \
-	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-colormap-plugin.zip -O /tmp/geoserver-colormap-plugin.zip; \
-	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-vector-mosaic-plugin.zip -O /tmp/geoserver-vector-mosaic-plugin.zip; \
+	wget -q https://build.geoserver.org/geoserver/2.28.x/community-latest/geoserver-2.28-SNAPSHOT-ncwms-plugin.zip -O /tmp/geoserver-ncwms-plugin.zip; \
+	wget -q https://build.geoserver.org/geoserver/2.28.x/community-latest/geoserver-2.28-SNAPSHOT-jms-cluster-plugin.zip -O /tmp/geoserver-jms-cluster-plugin.zip; \
+	wget -q https://build.geoserver.org/geoserver/2.28.x/community-latest/geoserver-2.28-SNAPSHOT-activeMQ-broker-plugin.zip -O /tmp/geoserver-activeMQ-broker-plugin.zip; \
+	wget -q https://build.geoserver.org/geoserver/2.28.x/community-latest/geoserver-2.28-SNAPSHOT-colormap-plugin.zip -O /tmp/geoserver-colormap-plugin.zip; \
+	wget -q https://build.geoserver.org/geoserver/2.28.x/community-latest/geoserver-2.28-SNAPSHOT-vector-mosaic-plugin.zip -O /tmp/geoserver-vector-mosaic-plugin.zip; \
 	unzip -o /tmp/geoserver.zip -d /tmp; \
 	unzip -o /tmp/geoserver-vectortiles-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-netcdf-out-plugin.zip -d /tmp; \
