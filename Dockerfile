@@ -16,8 +16,12 @@ RUN set -eux; \
 		unzip \
 		libfreetype6-dev \
 		fontconfig \
+		libnetcdf19 \
+		libnetcdf-dev \
+		libhdf5-103-1 \
+		libhdf5-dev \
 	; \
-	rm -rf /var/cache/apt 
+	rm -rf /var/cache/apt
 
 RUN set -eux; \
 	\
@@ -28,6 +32,7 @@ RUN set -eux; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-css-plugin.zip -O /tmp/geoserver-css-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-ysld-plugin.zip -O /tmp/geoserver-ysld-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-wps-plugin.zip -O /tmp/geoserver-wps-plugin.zip; \
+	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-pyramid-plugin.zip -O /tmp/geoserver-pyramid-plugin.zip; \
 	wget -q http://sourceforge.net/projects/geoserver/files/GeoServer/${GEOSERVER_VERSION}/extensions/geoserver-${GEOSERVER_VERSION}-gwc-s3-plugin.zip -O /tmp/geoserver-gwc-s3-plugin.zip; \
 	wget -q https://build.geoserver.org/geoserver/2.28.x/community-latest/geoserver-2.28-SNAPSHOT-ncwms-plugin.zip -O /tmp/geoserver-ncwms-plugin.zip; \
 	wget -q https://build.geoserver.org/geoserver/2.28.x/community-latest/geoserver-2.28-SNAPSHOT-jms-cluster-plugin.zip -O /tmp/geoserver-jms-cluster-plugin.zip; \
@@ -42,6 +47,7 @@ RUN set -eux; \
 	unzip -o /tmp/geoserver-ysld-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-wps-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-ncwms-plugin.zip -d /tmp; \
+	unzip -o /tmp/geoserver-pyramid-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-colormap-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-jms-cluster-plugin.zip -d /tmp; \
 	unzip -o /tmp/geoserver-activeMQ-broker-plugin.zip -d /tmp; \
